@@ -1,1 +1,19 @@
 \section{Klima}
+
+\subsection{De bedste klimasimuleringer i dag}
+Vi har valgt at lave et optimistisk ``best case'' scenario. Vi antager
+derfor at vi får 3 måneders kørselstid på verdens bedste supercomputer, som
+kan køre med $2.57 petaflop/s$.\footnote{Dette er den maksimalt opnåede ydelse
+ifølge http://www.top500.org/lists/2010/11. For et realistisk estimat skal nok
+bruges et noget mindre tal.}
+
+Vi antager at den bedste klimamodel er baseret på diskrete tidsenheder og en
+inddeling af jordoverfladen i diskrete områder. Vi antager derudover at
+det tager omtrent 100 kiloflop at beregne et område per tidsenhed. Dette er i
+høj grad et subjektivt estimat og er baseret på vores umiddelbare opfattelse af
+kompleksiteten af en brugbar model samt antallet af parametre i en fornuftig algoritmer.
+
+Herudfra kan vi udregne at der kan udregnes i alt $2.57 petaflop/s * 3 måneder /
+100 kiloflop \approx 2.03*10^14$ områder i en enkelt tidsenhed. Hvis vi gerne
+ville simulere 100 år med områder på omkring $1 km^2$ kan man altså simulere det
+med tidstrin på omkring 2.2 timer.
