@@ -5,25 +5,24 @@ og understøtter at planeterne kan have forskellig masse - dog simplificerer
 simulationen planeterne til punktmasser. Beregningen foregår ud fra følgende
 formler:
 
-Her er $\mathbf{r}_{p,t_0}$, $\mathbf{v}_{p,t_0}$, $\mathbf{a}_{p,t_0}$,
-$\mathbf{F}_{p,t_0}$ og $m_p$
-er henholsvis stedvektoren, hastighedsvektoren, accelerationsvektoren, den
-resulterende kraft og massen tilknytte planeten $p$ til
-tiden $t_0$. $P$ er mængden af planeter og $s$ er længden af tidstrinnene og $G$
-er gravitationskonstanten:
-
 \begin{gather*}
 \begin{split}
 \mathbf{a}_{p,t_0} &= \frac{\mathbf{F}_{p,t_0}}{m_p}\\
-&= \frac{\sum_k^{P - \{p\}} \frac{G*m_k*m_p}{|\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}|^2} *
+&= \frac{\sum_k^{P \backslash \{p\}} \frac{G*m_k*m_p}{|\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}|^2} *
 \frac{\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}}{|\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}|}}{m_p} \\
-&= \sum_k^{P - \{p\}} \frac{G*m_k}{|\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}|^3}
+&= \sum_k^{P \backslash \{p\}} \frac{G*m_k}{|\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}|^3}
 * (\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0})
 \end{split} \\
 \\
 \mathbf{v}_{p,t_0+s} = \mathbf{v}_{p,t_0} + \mathbf{a}_{p,t_0}*s \\
 \mathbf{r}_{p,t_0+s} = \mathbf{r}_{p,t_0} + \mathbf{v}_{p,t_0}*s
 \end{gather*}
+
+Her er $\mathbf{r}_{p,t_0}$, $\mathbf{v}_{p,t_0}$, $\mathbf{a}_{p,t_0}$,
+$\mathbf{F}_{p,t_0}$ og $m_p$ henholsvis stedvektoren, hastighedsvektoren,
+accelerationsvektoren, den resulterende kraft og massen tilknyttet planeten $p$
+til tiden $t_0$. $P$ er mængden af planeter og $s$ er længden af tidstrinnene
+og $G$ er gravitationskonstanten.
 
 \definecolor{grey}{RGB}{75,75,75}
 \lstset{
