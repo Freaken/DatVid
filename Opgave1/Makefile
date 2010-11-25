@@ -1,7 +1,7 @@
 GRAPHS=
 TARGET=uge1.pdf
 TEXFILES=*.tex
-HELPFILES=
+HELPFILES=Newton.hs
 
 all: $(TARGET)
 
@@ -11,7 +11,7 @@ $(TARGET): aflevering.pdf
 aflevering.pdf: $(GRAPHS) $(TEXFILES) $(HELPFILES) Makefile
 
 clean:
-	rm -rf *.aux *.log *.out *.toc *.eps *.data *~ aflevering.pdf $(GRAPHS) $(TARGET)
+	rm -rf *.aux *.log *.out *.toc *.eps *.data *.o *.hi *~ aflevering.pdf $(GRAPHS) $(TARGET)
 
 %.svg: %.dot
 	dot $*.dot -Tsvg -o $*.svg

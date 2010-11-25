@@ -9,14 +9,15 @@ vplus = zipWith (+)
 vminus = zipWith (-)
 vmult s = map (*s)
 
-step ps p = Planet new_pos new_vel (mass p)
+step ps p = Planet npos nvel (mass p)
     where others = filter (/=p) ps
-          diff_vectors = vminus (pos p) . pos <$> others
-          dists = sqrt . sum . map (^2) <$> diff_vectors
-          new_vel = foldl vplus (vel p) $ zipWith3 (\r p -> vmult (-(mass p)*g/r^3)) dists others diff_vectors
-          new_pos = pos p `vplus` (map (*s) new_vel)
+          diffs = map (`vminus` pos p) $ map pos others
+          dists = sqrt . sum . map (^2) <$> diffs
+          nvel = foldl vplus (vel p) . map (vmult s) $
+            zipWith3 (\r k -> vmult (mass k*g/r^3)) dists others diffs
+          npos = pos p `vplus` (s `vmult` nvel)
 
 all_step ps = map (step ps) ps
 
 simulation ps = print ps >> simulation (all_step ps)
-main = simulation [Planet [1,0] [0,0] 0.001, Planet [0,1] [0,-0.1] 0.005]
+main = simulation [Planet [0] [0] 0.001, Planet [1] [0] 0.005]

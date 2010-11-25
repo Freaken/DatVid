@@ -1,1 +1,44 @@
-\section{Planet-simulator}
+\subsection{Planet-simulator}
+Vi har skrevet planetsimulatoren i haskell, og den kan køres med eksempelvis
+{\tt runghc Newton.hs}. Simulatoren kan simulere et vilkårligt antal dimensioner
+og understøtter at planeterne kan have forskellig masse - dog simplificerer
+simulationen planeterne til punktmasser. Beregningen foregår ud fra følgende
+formler:
+
+Her er $\mathbf{r}_{p,t_0}$, $\mathbf{v}_{p,t_0}$, $\mathbf{a}_{p,t_0}$,
+$\mathbf{F}_{p,t_0}$ og $m_p$
+er henholsvis stedvektoren, hastighedsvektoren, accelerationsvektoren, den
+resulterende kraft og massen tilknytte planeten $p$ til
+tiden $t_0$. $P$ er mængden af planeter og $s$ er længden af tidstrinnene og $G$
+er gravitationskonstanten:
+
+\begin{gather*}
+\begin{split}
+\mathbf{a}_{p,t_0} &= \frac{\mathbf{F}_{p,t_0}}{m_p}\\
+&= \frac{\sum_k^{P - \{p\}} \frac{G*m_k*m_p}{|\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}|^2} *
+\frac{\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}}{|\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}|}}{m_p} \\
+&= \sum_k^{P - \{p\}} \frac{G*m_k}{|\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0}|^3}
+* (\mathbf{r}_{k,t_0} - \mathbf{r}_{p,t_0})
+\end{split} \\
+\\
+\mathbf{v}_{p,t_0+s} = \mathbf{v}_{p,t_0} + \mathbf{a}_{p,t_0}*s \\
+\mathbf{r}_{p,t_0+s} = \mathbf{r}_{p,t_0} + \mathbf{v}_{p,t_0}*s
+\end{gather*}
+
+\definecolor{grey}{RGB}{75,75,75}
+\lstset{
+    language=haskell,                 % choose the language of the code
+    basicstyle=\ttfamily\footnotesize % the size of the fonts that are used for the
+    keywordstyle=,
+    numbers=left,                     % where to put the line-numbers
+    numberstyle=\footnotesize,        % the size of the fonts that are used for the
+    numbersep=5pt,                    % how far the line-numbers are from the code
+    backgroundcolor=\color{white},    % choose the background color. You must add
+    showspaces=false,                 % show spaces adding particular underscores
+    showstringspaces=false,           % underline spaces within strings
+    showtabs=false,                   % show tabs within strings adding particular
+    frame=single,                     % adds a frame around the code
+    breaklines=true,                  % sets automatic line breaking
+    breakatwhitespace=false           % sets if automatic breaks should only happen at
+}
+\lstinputlisting{Newton.hs}
