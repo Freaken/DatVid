@@ -1,0 +1,33 @@
+\documentclass[11pt,fleqn]{article}
+\usepackage[a4paper, hmargin={2.8cm, 2.8cm}, vmargin={2.8cm, 2.8cm}]{geometry}  % Geometri-pakke: Styrer bl.a. maginer                              %
+\usepackage[utf8]{inputenc}                                         % Lidt kodning så der ikke kommer problemer ved visse konverteringer            %
+\usepackage[babel, lille, nat, da, farve]{ku-forside}               % KU-forside med logoer                                                         %
+\usepackage{listingsutf8}
+\usepackage{amsmath}
+\def\HyperLinks{                                                    %  Hyperlinks-pakke, der laver referencer til links og tillader links til www   %
+\usepackage[pdftitle={\TITEL},pdfauthor={\FORFATTER},               %  Der er foretaget et lille trick så pakken indlæses efter                     %
+pdfsubject={\UNDERTITEL}, linkbordercolor={0.8 0.8 0.8}]{hyperref}} %  titlen defineres.                                                            %
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[toc]{appendix}
+\usepackage{pdfpages}
+
+\forfatter{Davy Eskildsen, Emil Johanson, Thorbjørn S. Kaiser, Mathias Svensson}
+\dato{9 December 2010}
+\titel{Gruppeopgave 2}
+\undertitel{Modellering og Simulering af Fysiske Systemer}
+
+\HyperLinks % Henter hyperlinks-pakke og sætter pdf-titel mm. til at svare til de just definerede
+
+\pagestyle{fancy}
+\lhead{{\small \FORFATTER}}
+\chead{}
+\rhead{{\small \TITEL}}
+\cfoot{\footnotesize Side \thepage \ af \pageref{LastPage}}
+
+\renewcommand{\appendixtocname}{Bilag}
+\renewcommand{\appendixpagename}{Bilag}
+\setcounter{secnumdepth}{1}
+\setcounter{tocdepth}{2}
+\mathcode`\*"8000{\catcode`\*\active\gdef*{\cdot}}
