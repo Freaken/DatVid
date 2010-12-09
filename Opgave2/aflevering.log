@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.24)  9 DEC 2010 23:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.22)  9 DEC 2010 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,8 +680,8 @@ Package: atbegshi 2010/03/25 v1.12 At begin shipout hook (HO)
 (/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 \Fld@listcount=\count125
-))
-No file aflevering.aux.
+)) (./aflevering.aux
+(./analyse.aux) (./bold.aux) (./kant.aux))
 \openout1 = `aflevering.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -700,6 +700,7 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
+
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
 -------------------- Geometry parameters
@@ -767,15 +768,18 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
+ (./aflevering.out)
+(./aflevering.out)
 \@outlinefile=\write3
 \openout3 = `aflevering.out'.
 
 \AtBeginShipoutBox=\box33
+ (./aflevering.toc)
 \tf@toc=\write4
 \openout4 = `aflevering.toc'.
 
 
-<nat-farve.pdf, id=3, 597.23125pt x 845.1575pt>
+<nat-farve.pdf, id=33, 597.23125pt x 845.1575pt>
 File: nat-farve.pdf Graphic file (type pdf)
  <use nat-farve.pdf>
 File: nat-farve.pdf Graphic file (type pdf)
@@ -796,9 +800,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 11.
 
 [2
 
@@ -822,46 +823,27 @@ LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
 
 
-LaTeX Warning: Reference `basis' on page 3 undefined on input line 63.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 65.
-
 [3
 
 
-]
-
-LaTeX Warning: Reference `lessg' on page 4 undefined on input line 70.
-
-
-LaTeX Warning: Reference `moarg' on page 4 undefined on input line 70.
-
-
-LaTeX Warning: Reference `lesst' on page 4 undefined on input line 76.
-
-
-LaTeX Warning: Reference `moart' on page 4 undefined on input line 76.
-
-<basisrun.png, id=66, 449.68pt x 337.26pt>
+] <basisrun.png, id=99, 449.68pt x 337.26pt>
 File: basisrun.png Graphic file (type png)
  <use basisrun.png>
-<lessgravity.png, id=67, 449.68pt x 337.26pt>
+<lessgravity.png, id=100, 449.68pt x 337.26pt>
 File: lessgravity.png Graphic file (type png)
  <use lessgravity.png>
-<moargravity.png, id=68, 449.68pt x 337.26pt>
+<moargravity.png, id=101, 449.68pt x 337.26pt>
 File: moargravity.png Graphic file (type png)
  <use moargravity.png>
-<lesstime.png, id=69, 449.68pt x 337.26pt>
+<lesstime.png, id=102, 449.68pt x 337.26pt>
 File: lesstime.png Graphic file (type png)
  <use lesstime.png>
-<moartime.png, id=70, 449.68pt x 337.26pt>
+<moartime.png, id=103, 449.68pt x 337.26pt>
 File: moartime.png Graphic file (type png)
  <use moartime.png>)
 
@@ -870,18 +852,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 12.
-
 [4 <./basisrun.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
-
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 12.
 
 [5 <./lessgravity.png (PNG copy)> <./moargravity.png (PNG copy)>]
 
@@ -890,82 +866,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 12.
-
 [6 <./lesstime.png (PNG copy)> <./moartime.png (PNG copy)>]
 \openout2 = `kant.aux'.
 
  (./kant.tex
-! Undefined control sequence.
-l.8 \includegraphic
-                   {lena}
-? 
-! Undefined control sequence.
-l.13 \includegraphic
-                    {lena_edges}
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.13 \includegraphic{lena_
-                          edges}
-? 
-! Extra }, or forgotten $.
-l.13 \includegraphic{lena_edges}
-                                
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 ...{Lena billed efter kant finder funktionen}
-                                                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.15 \end{figure}
-                 
-? 
-! Undefined control sequence.
-l.18 \includegraphic
-                    {Donkey-kong}
-? 
-! Undefined control sequence.
-l.23 \includegraphic
-                    {Donkey-kong_edges}
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.23 \includegraphic{Donkey-kong_
-                                 edges}
-? 
-! Extra }, or forgotten $.
-l.23 \includegraphic{Donkey-kong_edges}
-                                       
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.24 ... Kong billed efter kant finder funktionen}
-                                                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.25 \end{figure}
-                 
-? 
-)
+<lena.jpg, id=125, 816.04875pt x 1745.01938pt>
+File: lena.jpg Graphic file (type jpg)
+ <use lena.jpg>
+<lena_edges.png, id=126, 1088.065pt x 2326.6925pt>
+File: lena_edges.png Graphic file (type png)
+ <use lena_edges.png>
+<Donkey-kong.jpg, id=127, 349.305pt x 481.8pt>
+File: Donkey-kong.jpg Graphic file (type jpg)
+ <use Donkey-kong.jpg>
+<Donkey-kong_edges.png, id=128, 349.305pt x 481.8pt>
+File: Donkey-kong_edges.png Graphic file (type png)
+
+<use Donkey-kong_edges.png>)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
-
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 13.
 
 [7
 
@@ -977,41 +899,51 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[8 <./lena.jpg>]
 
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 13.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-[8] AED: lastpage setting LastPage (./aflevering.aux (./analyse.aux)
-(./bold.aux) (./kant.aux))
+[9 <./lena_edges.png (PNG copy)>]
 
-LaTeX Warning: There were undefined references.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
+[10 <./Donkey-kong.jpg>]
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
- ) 
+[11 <./Donkey-kong_edges.png (PNG copy)>] AED: lastpage setting LastPage
+(./aflevering.aux (./analyse.aux) (./bold.aux) (./kant.aux)) ) 
 Here is how much of TeX's memory you used:
- 9909 strings out of 493848
- 137573 string characters out of 1152822
- 283598 words of memory out of 3000000
- 12891 multiletter control sequences out of 15000+50000
- 36413 words of font info for 76 fonts, out of 3000000 for 9000
+ 9949 strings out of 493848
+ 138182 string characters out of 1152822
+ 284947 words of memory out of 3000000
+ 12916 multiletter control sequences out of 15000+50000
+ 33623 words of font info for 71 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  39i,12n,45p,374b,1626s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmti7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9
-.pfb>
-Output written on aflevering.pdf (8 pages, 208222 bytes).
+</usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmti7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on aflevering.pdf (11 pages, 2041408 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
