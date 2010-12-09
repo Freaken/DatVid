@@ -1,2 +1,34 @@
 \section{Analyse af modellerings og simulerings processer}
 
+\subsection{K. Erleben - Simulering og modellering af robotter og mennesker}
+
+\subsection{Hsu og Keyser - Piles of Objects}
+\paragraph{(a)}
+Artiklen beskriver en mere effektiv metode til at simulere ensformige der ligger
+i ``bunker''. Dog er formålet ikke at opnå den samme konfiguration af objekterne
+som den tilsvarende startkonfiguration vil føre til -- derimod blot at opnå en
+effekt som ser realistisk ud.
+
+Modellen der bruges er en standard fysiksimulation med friktion, tyngdekraft og
+lignende. Det videnskabelige arbejde går på, at have lavet en ændring i
+diskretiseringen.
+
+I denne diskretisering kan objekterne deaktiveres, hvorved de
+ikke vil bevæge sig før de bliver vækket igen senere -- enten fordi at bunken
+begynder at skride, eller fordi bunken bliver ramt af et objekt med høj fart.
+Denne deaktivering gør, at disse objekter (eventuelt midlertidigt) ikke behøves
+simmuleret. På denne måde opnår man en performanceforbedring, som eventuelt kan
+bruges til at bruge mere realistiske friktionssimmuleringer.
+
+De verificerer at modellen er acceptabel, ved at sammenligne deres optimerede
+diskretisering med en mere standardiseret diskretisering. Valideringen består
+hovedsageligt i eyeballing.
+
+\paragraph{(b)}
+Det videnskabelige arbejde i artiklen består i at eftervise hypotesen ``en
+simulation hvori vores optimering udnyttes vil være omtrent lige så præcis som
+en fuld simulation der ikke gør''.
+
+Vi mener egentlig ikke der er noget umiddelbart kritisabelt i artiklen -- men en
+stor del af artiklen indeholder i højere grad en beskrivelse af deres optimering
+end noget egentlig videnskabeligt arbejde.
