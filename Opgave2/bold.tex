@@ -29,14 +29,14 @@ eksakt og se hvorvidt denne og den diskrete approksimation udvikler sig tilnærm
 Dette er naturligvist ikke tilfældet for alle differentialligninger, men det er her muligt da ligningen
 er tilpas simpel:
 \begin{align}
-x''(t) 	&= 0 \\
-x'(t) 	&= v_{x,0} \\
 x(t) 	&= t \cdot v_{x,0} + x_0 
+x'(t) 	&= v_{x,0} \\
+x''(t) 	&= 0 \\
 \end{align}
 \begin{align}
-y''(t)	&= -g \\
+y(t)	&= -\frac{1}{2} \cdot g \cdot t + v_{y,0} \cdot t + y_0
 y'(t)	&= -g \cdot t + v_{y,0} \\
-y(t)	&= \frac{-1}{2} \cdot g \cdot t + v_{y,0} \cdot t + y_0
+y''(t)	&= -g \\
 \end{align}
 
 Til validering af simulatoren kunne man optage kastet af en bold (her gerne i et rum med vakuum\ldots)
@@ -47,11 +47,11 @@ altså et output der passer til den indsamlede data.
 Man kunne også, i mangel på kamera, opstille nogle fornuftige hypoteser om hvordan simulatoren skal
 opføre sig når man ``skruer'' på de givne variable. Nogle eksempler:
 \begin{itemize}
-\item ændring af $m$ burde ikke have nogen indflydelse på vores simulation, da modellen er for simple
+\item Ændring af $m$ burde ikke have nogen indflydelse på vores simulation, da modellen er for simple
 til at massen spiller en rolle.
-\item ændring af $g$ burde gøre at hastigheden ud af y-aksen ($v_y$) per tidsenhed ($\Delta t$) ændres,
+\item Ændring af $g$ burde gøre at hastigheden ud af y-aksen ($v_y$) per tidsenhed ($\Delta t$) ændres,
 hvor en højere $g$ skulle resultere i en større ændring imod en lavere $g$.
-\item ændring af $\Delta t$ burde kun have betydning for hvor ``finkornet'' vores simulation er, dvs.
+\item Ændring af $\Delta t$ burde kun have betydning for hvor ``finkornet'' vores simulation er, dvs.
 at hastigheden med hvilken tiden flyder ikke burde have nogen indflydelse på den her underliggende
 model, men kun på hvor store stridt vi tager i simulationen.
 Da simulationen er en diskret approksimation betyder dette at en mindre $\Delta t$ vil give en højere
